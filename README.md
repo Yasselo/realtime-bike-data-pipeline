@@ -1,6 +1,4 @@
-# Creating the README.md file with the provided content
 
-content = """
 # 🚴‍♂️ _Jcdecaux Bike Real-time Data Pipeline with Docker_
 
 ### 📊 Overview
@@ -22,16 +20,16 @@ All components run in Docker containers. Ensure Docker and Docker Compose are in
 ### ⚙️ Installation and Setup
 
 1. Clone the repository:
-   \`\`\`bash
+   '''bash
    git clone <repository-url>
    cd <repository-name>
-   \`\`\`
+   '''
 
 2. **Build and Start Services**:
    Run the following command to start all services, including Kafka, Spark, Elasticsearch, and Kibana, in Docker containers:
-   \`\`\`bash
+   '''bash
    docker-compose up --build
-   \`\`\`
+   '''
 
    This command pulls the necessary Docker images, builds the custom bike pipeline container, and starts all services defined in \`docker-compose.yml\`.
 
@@ -46,13 +44,13 @@ All components run in Docker containers. Ensure Docker and Docker Compose are in
 ### 🚀 Running the Pipeline
 
 1. Start the Docker containers:
-   \`\`\`bash
+   '''bash
    docker-compose up
-   \`\`\`
+   '''
 2. Start the pipeline:
-   \`\`\`bash
+   '''bash
    docker exec -it bike_pipeline bash -c "exec ./start_pipeline.sh"
-   \`\`\`
+   '''
 3. **Kibana Access**: Open [http://localhost:5601](http://localhost:5601) to view Kibana and check Elasticsearch data under "Index Management".
 
 
