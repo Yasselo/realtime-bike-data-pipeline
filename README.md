@@ -5,7 +5,7 @@
 This pipeline captures real-time bike station data from the Jcdecaux public API and processes it using Dockerized services for messaging, real-time processing, storage, and visualization. Kafka handles messaging, Spark Streaming processes data, Elasticsearch stores the information, and Kibana and Streamlit provide visualization.
 
 ### 🛠 Architecture
-![Jcdecaux Bike Real-time Data Pipeline](files/architecture.png)
+![Jcdecaux Bike Real-time Data Pipeline](files/Architecture.png)
 
 The pipeline consists of the following components:
 1. **Jcdecaux API**: Source of real-time bike station data.
